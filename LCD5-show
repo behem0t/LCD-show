@@ -68,11 +68,6 @@ if test "$j" = "kali" ;then
 sudo cp ./usr/share/X11/xorg.conf.d/99-fbturbo.conf-kali-HDMI /usr/share/X11/xorg.conf.d/99-fbturbo.conf
 fi
 
-if [ -b /dev/mmcblk0p7 ]; then
-sudo cp ./cmdline.txt-noobs /boot/cmdline.txt
-else
-sudo cp ./cmdline.txt /boot/
-fi
 
 sudo cp ./inittab /etc/
 
